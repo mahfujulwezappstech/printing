@@ -1,0 +1,34 @@
+/* XS */
+@media (max-width: 450px) {
+  .login-btn,
+  .register-btn {
+    width: 120px;
+  }
+}
+/* XS */
+@media (max-width: 575.98px) {
+}
+
+/* SM */
+@media (max-width: 767.98px) {
+  .header-top {
+    display: none;
+  }
+  .login-btn,
+  .register-btn {
+    width: 200px;
+  }
+}
+
+/* MD */
+@media (max-width: 991.98px) {
+}
+
+/* LG */
+@media (max-width: 1199.98px) {
+}
+
+/* XL */
+@media (max-width: 1399.98px) {
+
+}

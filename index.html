@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sina-lite-clone</title>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- other css -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- desktop header -->
+    <header class="desktop-header">
+        <!-- header top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="header-top-links">
+                            <a href="index.html">Home</a>
+                            <a href="login.html">Sign In</a>
+                            <a href="#">Blog</a>
+                            <a href="register.html">Create an Account</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="header-top-right">
+                            <img src="https://t4.ftcdn.net/jpg/01/04/47/13/360_F_104471360_1xohRUSRjfdGxoaRDtLg2z4ztBHkT21K.jpg"
+                                alt="bd-flag">
+                            <div>Bangla | English</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Logo searchbar auth buttons -->
+        <div
+            class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-3 position-relative">
+            <!-- Left: Logo -->
+            <div class="logo d-flex justify-content-between align-items-center w-100">
+
+                <!-- Left side: menu + logo -->
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-bars fs-3 d-block d-lg-none"></i>
+                    <img src="./logo.png" alt="Logo" style="height:100px;">
+                </div>
+
+                <!-- Right side: search icon -->
+                <div class="d-inline-block">
+                    <!-- Search Icon -->
+                    <i class="fa-solid fa-magnifying-glass fs-2 d-block d-lg-none" id="mobileSearchIcon"
+                        style="cursor:pointer;"></i>
+                </div>
+            </div>
+
+            <!-- Hidden Search Input - Positioned absolutely at container level -->
+            <div id="mobileSearchInput" class="mobile-search-input">
+                <input type="text" class="form-control w-100" placeholder="Search...">
+            </div>
+
+            <!-- Right: Search + Buttons -->
+            <div class="d-flex align-items-center gap-3 ">
+                <!-- Search -->
+                <div class="d-none d-lg-flex search align-items-center">
+                    <input type="text" placeholder="Search our products here">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" d-flex flex-column flex-sm-row gap-3 mt-4 auth">
+                    <a href="login.html" class="login-btn">
+                        Login
+                    </a>
+                    <a href="register.html" class="register-btn">Register for free</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars menu-icon"></i>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="nav-menu">
+            <ul class="container nav-list">
+                <li>
+                    <a href="#">All Products</a>
+                </li>
+                <li>
+                    <a href="#">Business Cards <i class="fa-solid fa-angle-down"></i></a>
+                    <!-- First dropdown -->
+                    <div class="dropdown">
+                        <div class="list">
+
+                            <h4 class="text-pr fw-bold">Business Cards</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="text-dark">
+                                        Professional services for Custom Business Card Printing and Personalized Cards.
+                                        We are your trusted printing services provider.
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://sinalite.com/media/catalog/category/icon-bc_1.jpg" alt="">
+                                </div>
+                            </div>
+                            <hr class="text-dark">
+                            <div class="row">
+
+                                <div class="col-4">
+                                    <h5 class="fw-bold text-pr">Standard :</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="product-details.html">14pt (Profit Maximizer) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">16pt + Matte Finish </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">16pt + UV (High Gloss) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">16pt + AQ </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">13pt Enviro Uncoated </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 14pt Writable + AQ (C1S) </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="fw-bold text-white"> ;</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#"> 14pt + Matte Finish </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">14pt + UV (High Gloss) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">18pt Gloss Lamination </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">14pt + AQ </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">18PT Writable (C1S) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">13pt Linen Uncoated </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">14pt Writable + UV (C1S) </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <h5 class="fw-bold text-pr">Specialty :</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Metallic Foil (Raised) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kraft Paper</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Durable </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Spot UV (Raised)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pearl Paper </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Die Cut </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Soft Touch (Suede) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Soft Touch (Suede) </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">32pt Printed Edge <span class="fw-bold text-danger">New</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ultra Smooth </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Print Products <i class="fa-solid fa-angle-down"></i></a>
+                    <!-- First dropdown -->
+                    <ul class="dropdown">
+                        <li>
+                            <a href="products.html">Postcards <i class="fa-solid fa-angle-right"></i></a>
+                            <div class="dropdown-right">
+                                <div class="list">
+
+                                    <h4 class="text-pr fw-bold">Postcards</h4>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-dark">
+                                                Postcards are a powerful and cost-effective marketing tool, particularly
+                                                useful as a mailer.
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="https://sinalite.com/media/catalog/category/icon-pc.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <hr class="text-dark">
+                                    <div class="row">
+
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-pr">Standard :</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">14pt (Profit Maximizer) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + Matte Finish </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + UV (High Gloss) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + AQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">13pt Enviro Uncoated </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> 14pt Writable + AQ (C1S) </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-white"> ;</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"> 14pt + Matte Finish </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt + UV (High Gloss) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">18pt Gloss Lamination </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt + AQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">18PT Writable (C1S) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">13pt Linen Uncoated </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt Writable + UV (C1S) </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-pr">Specialty :</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Metallic Foil (Raised) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Kraft Paper</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Durable </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Spot UV (Raised)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pearl Paper </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Die Cut </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soft Touch (Suede) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soft Touch (Suede) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">32pt Printed Edge <span
+                                                            class="fw-bold text-danger">New</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Ultra Smooth </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="products.html">Flyers <i class="fa-solid fa-angle-right"></i></a>
+                            <div class="dropdown-right">
+                                <div class="list">
+
+                                    <h4 class="text-pr fw-bold">Business Cards</h4>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-dark">
+                                                Professional services for Custom Business Card Printing and Personalized
+                                                Cards.
+                                                We are your trusted printing services provider.
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="https://sinalite.com/media/catalog/category/icon-bc_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <hr class="text-dark">
+                                    <div class="row">
+
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-pr">Standard :</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">14pt (Profit Maximizer) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + Matte Finish </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + UV (High Gloss) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">16pt + AQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">13pt Enviro Uncoated </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> 14pt Writable + AQ (C1S) </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-white"> ;</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"> 14pt + Matte Finish </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt + UV (High Gloss) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">18pt Gloss Lamination </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt + AQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">18PT Writable (C1S) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">13pt Linen Uncoated </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14pt Writable + UV (C1S) </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="fw-bold text-pr">Specialty :</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Metallic Foil (Raised) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Kraft Paper</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Durable </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Spot UV (Raised)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Pearl Paper </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Die Cut </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soft Touch (Suede) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soft Touch (Suede) </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">32pt Printed Edge <span
+                                                            class="fw-bold text-danger">New</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Ultra Smooth </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="products.html">Stationery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Large Format <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Stationary <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Promotional <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Labels & Packaging <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Apparel <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                    <a href="#">Sample Kits</a>
+                </li>
+                <li>
+                    <a href="#">Customer Order <i class="fa-solid fa-angle-down"></i></a>
+
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- support section -->
+
+    <section class="container support">
+        <div class="support-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>Create a Support Ticket</div>
+        </div>
+        <div class="support-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>Call 1-866-899-2499</div>
+        </div>
+        <div class="support-item">
+            <i class="fa-regular fa-comment"></i>
+            <div>Chat with an Agent</div>
+        </div>
+        <div class="support-item">
+            <i class="fa-solid fa-circle-info"></i>
+            <div>Go To Support Center</div>
+        </div>
+    </section>
+
+
+    <main>
+        <!-- hero section -->
+        <section class="container">
+            <div class="hero-section">
+                <div class="row hero-wrapper">
+                    <!-- LEFT SLIDER CONTENT -->
+                    <div class="col-7 hero-left">
+                        <h2 id="slide-title-3">Text</h2>
+                        <h1 id="slide-title">Save you Time</h1>
+                        <h1 id="slide-title-2">Grow Your Business</h1>
+
+
+                        <!-- Bullet Navigation -->
+                        <div class="hero-bullets" id="hero-bullets"></div>
+                    </div>
+
+                    <!-- RIGHT FORM -->
+                    <div class="col-5 hero-right">
+                        <form class="hero-form">
+                            <h3 class="text-pr">Sign up for <span class="free-text">FREE</span> to see our trade-only
+                                prices.</h3>
+                            <input type="text" placeholder="Full Name" required />
+                            <input type="email" placeholder="Company Email Address" required />
+                            <button type="submit">Sign Up Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- order steps section -->
+        <section class="container py-5">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow border-0 order-step-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-pr">Step 1 : Sign up</h5>
+                            <p class="card-text ">
+                                Unique and modern designs that make your brand stand out from the competition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow border-0 order-step-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-pr">Step 2: Price product</h5>
+                            <p class="card-text ">
+                                Get wholesale prices and instant quotes 24/7 on 1,000+ print product options.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow border-0 order-step-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-pr">Step 3: Place order</h5>
+                            <p class="card-text ">
+                                Upload your file and place your order. You’ll earn reward points each time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow border-0 order-step-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-pr">Step 4: Get order</h5>
+                            <p class="card-text ">
+                                We do blind shipping so you can opt to send orders straight to your clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container hr-line"></div>
+
+        <!-- video section  -->
+        <section class="container py-5">
+            <div class="row align-items-center g-3">
+                <!-- Left side: Title + Description -->
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-pr">SinaLite: Your Wholesale Trade Printer
+                        Wholesale Trade Printing That Helps You Profit</h2>
+                    <p class="">
+                        SinaLite is a wholesale trade printer providing quality printing services exclusively to
+                        print sellers across America and Canada. In the last 26 years, we’ve served thousands of
+                        print partners with offset and digital printing, wide format production, label printing, DTG
+                        printing and more.
+                    </p>
+                    <p><b>You can become the ultimate one-stop shop for printing.</b></p>
+                    <p>We’ll help you get there. So claim your <a href="#" class="text-decoration-none">free account</a>
+                        and let’s get started.</p>
+                    <button
+                        class="btn btn-outline-primary btn-lg d-flex justify-content-between align-items-center gap-1">Learn
+                        more about us <i class="fa-solid fa-chevron-right mt-1"></i></button>
+                </div>
+
+                <!-- Right side: Video -->
+                <div class="col-md-6 text-center">
+                    <div class="ratio ratio-16x9 video-container">
+                        <video controls>
+                            <source src="https://sinalite.com/media/images/sinalite-v2-images/sn-v2-home.mp4"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial section -->
+        <section class="container py-5 text-center testimonial-section">
+            <img src="https://sinalite.com/media/images/testimonial-assets/testimonials_reviews_page_bluebg-01.jpg"
+                class="img-fluid mb-4" alt="Testimonial">
+
+            <p class="mb-4 mx-auto">
+                Ready to hear from our satisfied customers? Don't miss out on our compelling testimonial videos. Click
+                below to watch now and see how we've transformed businesses just like yours!
+            </p>
+
+            <button>Watch Testimonial Now</button>
+        </section>
+
+        <!-- brand carousel section  -->
+        <section class="container py-5">
+            <h3 class="fw-bold mb-4 text-pr">Proud Print Supplier for Over 20,000 Businesses</h3>
+
+            <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/fastsigns.jpg"
+                                class="img-fluid" alt="Brand 1">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/kkp.jpg"
+                                class="img-fluid" alt="Brand 2">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/mmp.jpg"
+                                class="img-fluid" alt="Brand 3">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/speedpro.jpg"
+                                class="img-fluid" alt="Brand 4">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/allegra.jpg"
+                                class="img-fluid" alt="Brand 5">
+                            <img src="https://sinalite.com/media/wysiwyg/smartwave/porto/brands/sinalite/speedpro.jpg"
+                                class="img-fluid" alt="Brand 6">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls below the carousel -->
+                <div class="d-flex justify-content-center mt-3">
+                    <button class="btn me-2" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer reviews section  -->
+        <section class="container py-5">
+            <h2 class="fw-bold mb-5 text-pr">Real reviews from real customers </h2>
+            <div class="d-flex gap-1">
+                <div class="mb-2 text-warning">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="fs-6 fw-bold">
+                    15286 reviews
+                </div>
+            </div>
+
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-3">
+                            <!-- Card 1 -->
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">John Doe <span
+                                                    class="text-success text-sm">Verified
+                                                    Buyer</span></div>
+                                            <small class="text-muted">Nov 10, 2025</small>
+                                        </div>
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Great service! Highly
+                                            recommended.</p>
+                                        <p class="card-text text-center">The product arrived on time and the quality was
+                                            excellent. Will buy again!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">Jane Smith <span
+                                                    class="text-success text-sm">Verified
+                                                    Buyer</span></div>
+                                            <small class="text-muted">Oct 28, 2025</small>
+                                        </div>
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Good Experience</p>
+                                        <p class="card-text text-center">Overall satisfied with the purchase. Packaging
+                                            was neat and service was prompt.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">Alice Johnson <span
+                                                    class="text-success text-sm">Verified Buyer</span></div>
+                                            <small class="text-muted">Sep 15, 2025</small>
+                                        </div>
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Average Experience</p>
+                                        <p class="card-text text-center">The product was okay but delivery took longer
+                                            than expected. Support team was helpful.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-3">
+                            <!-- Card 4 -->
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">Michael Lee <span
+                                                    class="text-success text-sm">Verified
+                                                    Buyer</span></div>
+                                            <small class="text-muted">Nov 12, 2025</small>
+                                        </div>
+                                        <!-- Stars -->
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Good quality</p>
+                                        <p class="card-text text-center">Product quality was very good. Delivery was
+                                            fast and packaging neat.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">Sarah Parker <span
+                                                    class="text-success text-sm">Verified Buyer</span></div>
+                                            <small class="text-muted">Nov 5, 2025</small>
+                                        </div>
+                                        <!-- Stars -->
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Excellent!</p>
+                                        <p class="card-text text-center">Amazing service and fast delivery. Highly
+                                            satisfied with the product!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-12 col-lg-4">
+                                <div class="card shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <div class="card-title mb-0">David Kim <span
+                                                    class="text-success text-sm">Verified
+                                                    Buyer</span></div>
+                                            <small class="text-muted">Oct 25, 2025</small>
+                                        </div>
+                                        <!-- Stars -->
+                                        <div class="mb-5 text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p class="card-text mb-2 fs-5 fw-bold text-center">Satisfactory</p>
+                                        <p class="card-text text-center">Product was okay, but delivery took longer than
+                                            expected. Support was helpful though.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Prev/Next buttons with Font Awesome icons -->
+                <button class="carousel-control-prev custom-control" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="fas fa-chevron-left  text-dark"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-control" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="fas fa-chevron-right  text-dark"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-center mt-4">
+                <button class="review-btn">More reviews</button>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- top whole sale print products  -->
+        <section class="container py-4">
+            <h2 class="py-4 fw-bold text-pr">Top Wholesale Print Products:</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://sinalite.com/media/images/sinalite-v2-images/business-cards-home.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-pr fs-4">Business Cards</h5>
+                            <p class="card-text">Our #1 bestselling product! Choose from over 20 different types of high
+                                quality business cards.</p>
+                            <a href="#" class="btn p-0 text-pr fw-bold fs-6">Learn More <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://sinalite.com/media/images/sinalite-v2-images/postcards-v2-home.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-pr fs-4">Postcards</h5>
+                            <p class="card-text">Print postcards wholesale with custom sizes, unique stocks, premium
+                                finishes and more.</p>
+                            <a href="#" class="btn p-0 text-pr fw-bold fs-6">Learn More <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://sinalite.com/media/images/sinalite-v2-images/flyer-v2-home.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-pr fs-4">Flyers</h5>
+                            <p class="card-text">Print flyers quickly and affordably without sacrificing quality. Bulk
+                                quantities available.</p>
+                            <a href="#" class="btn p-0 text-pr fw-bold fs-6">Learn More <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="https://sinalite.com/media/images/sinalite-v2-images/brochure-v2-home.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-pr fs-4">Brochures</h5>
+                            <p class="card-text">Get your printing, bindery and bundling done all in one place for
+                                brochures and pamphlets.</p>
+                            <a href="#" class="btn p-0 text-pr fw-bold fs-6">Learn More <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+
+                <!-- Column 1: Logo -->
+                <div class="col text-center text-md-start">
+                    <img src="logo.png" alt="SinaLite" class="img-fluid mb-3" style="max-width: 150px;">
+                </div>
+
+                <!-- Column 2: Business Hours & Social Media -->
+                <div class="col" style="border-right: 3px solid white; ">
+                    <h6 class="fw-bold">Business Hours</h6>
+                    <p class="mb-1">Monday to Friday</p>
+                    <p class="mb-1">Customer Service: 8 AM to 5 PM EST</p>
+                    <p class="mb-1">Local Pickup: 8 AM to 5 PM EST</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>1-866-899-2499</p>
+                    <h6 class="fw-bold mt-3">Follow us on social media</h6>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Column 3: SinaLite Links -->
+                <div class="col">
+                    <h6 class="fw-bold">SinaLite</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">About SinaLite</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Testimonials</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Reviews</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Terms of Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Sitemap</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Accessibility Policy</a>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Our Services -->
+                <div class="col">
+                    <h6 class="fw-bold">Our Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Our Guarantees</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Shipping Options</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Turnaround Options</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Direct Mail</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Custom Quotes</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Submit Custom Order</a>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block">Branded Websites</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Resources -->
+                <div class="col">
+                    <h6 class="fw-bold">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Support Center</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Artwork Setup Guides</a>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Free Delivery
+                                Eligibility</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block mb-1">Business Tools</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block">Accessibility</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <div class="container py-4">
+        <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-between">
+            <div class="mb-2 mb-md-0">
+                Al-Print and Computer Centre INC. 2025
+            </div>
+            <div>
+                <img src="https://sinalite.com/media/images/payment-icons-footer.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

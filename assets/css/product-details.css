@@ -1,0 +1,121 @@
+@import url("variables.css");
+.product-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-title {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.product-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.product-review {
+  color: #ffc107;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.product-description {
+  font-size: 15px;
+}
+
+.product-review span {
+  color: var(--color-primary);
+  font-size: 12px;
+}
+
+.product-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-section h5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.product-details dt {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.product-details dd {
+  margin-bottom: 10px;
+}
+
+.form-section {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.quote-form input {
+  margin-bottom: 10px;
+}
+
+.quote-form button {
+  width: 100%;
+  background: var(--color-primary);
+  font-weight: 600;
+}
+
+.cant-find-product {
+  font-size: 14px;
+  background: #e7e7e7;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* Tab Buttons */
+/* Make the tabs container a flexbox */
+.product-section .nav-tabs {
+  display: flex;
+  gap: 0; /* remove gap between tabs if needed */
+}
+
+/* Each tab takes 50% */
+.product-section .nav-tabs .nav-item {
+  flex: 1; /* Equal width */
+}
+
+/* Tab buttons styling */
+.product-section .nav-tabs .nav-link {
+  border: none;
+  font-weight: 600; /* Bold text */
+  color: #333; /* Default text color */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin-right: 0; /* Remove extra gap since flex handles spacing */
+  text-align: center; /* Center the text */
+  width: 100%; /* Fill the nav-item */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.product-section .nav-tabs .nav-link:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Active tab underline */
+.product-section .nav-tabs .nav-link.active {
+  border-bottom: 3px solid var(--color-primary); /* Active tab indicator */
+}
+
+@media (max-width: 768px) {
+  .product-img {
+    margin-bottom: 20px;
+  }
+}
