@@ -74,3 +74,85 @@ searchIcon.addEventListener("click", () => {
   searchInput.style.display =
     searchInput.style.display === "none" ? "block" : "none";
 });
+
+
+
+// responsive navbar start
+// Toggle mobile menu drawer
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navMenu = document.querySelector('.nav-menu');
+    const mobileSearchIcon = document.getElementById('mobileSearchIcon');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    const body = document.body;
+    
+    // Toggle mobile menu drawer
+    if (menuIcon) {
+        menuIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+            navMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            this.classList.toggle('fa-bars');
+            this.classList.toggle('fa-times');
+        });
+    }
+    
+    // Toggle mobile search input
+    if (mobileSearchIcon && mobileSearchInput) {
+        mobileSearchIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+            mobileSearchInput.classList.toggle('active');
+            
+            // Focus on input when opened
+            if (mobileSearchInput.classList.contains('active')) {
+                setTimeout(() => {
+                    const input = mobileSearchInput.querySelector('input');
+                    if (input) input.focus();
+                }, 100);
+            }
+        });
+        
+        // Close search when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileSearchInput.contains(e.target) && !mobileSearchIcon.contains(e.target)) {
+                mobileSearchInput.classList.remove('active');
+            }
+        });
+    }
+    
+    // Close menu when clicking on a link (optional)
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 991.98) {
+                navMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (navMenu.classList.contains('active') && 
+            !navMenu.contains(e.target) && 
+            !menuIcon.contains(e.target)) {
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 991.98) {
+            navMenu.classList.remove('active');
+            body.classList.remove('menu-open');
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        }
+    });
+});
+// responsive navbar end

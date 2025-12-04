@@ -625,23 +625,17 @@ header .menu-icon {
   transition: 0.3s;
 }
 
-/* mobile search option */
-/* mobile search option */
+/* mobile search option  start*/
+
 .mobile-search-input {
   position: absolute;
   top: 115px;
-  /* Position below the header */
   left: 0;
   right: 0;
   z-index: 1000;
   display: none;
-
-  /* Optional: for better visibility */
   padding: 10px 15px;
-  /* Optional: add some padding */
 
-
-  /* Optional: add shadow */
 }
 
 .mobile-search-input input {
@@ -659,7 +653,8 @@ header .menu-icon {
   box-shadow: none;
 }
 
+/* mobile search option  end*/
+
 .logo-icon {
   display: flex !important;
 }
-
