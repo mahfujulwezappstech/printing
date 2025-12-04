@@ -22,6 +22,9 @@
 
 /* MD */
 @media (max-width: 991.98px) {
+  .auth{
+    margin-top: 45px !important;
+  }
 }
 
 /* LG */

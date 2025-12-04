@@ -119,9 +119,7 @@ body {
   height: 20px;
 }
 
-.logo-icon {
-  display: flex !important;
-}
+
 
 .search {
   display: flex;
@@ -631,16 +629,37 @@ header .menu-icon {
 /* mobile search option */
 .mobile-search-input {
   position: absolute;
-  top: 100%;
+  top: 115px;
   /* Position below the header */
   left: 0;
   right: 0;
   z-index: 1000;
   display: none;
-  background: white;
+
   /* Optional: for better visibility */
   padding: 10px 15px;
   /* Optional: add some padding */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
   /* Optional: add shadow */
 }
+
+.mobile-search-input input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.mobile-search-input input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.logo-icon {
+  display: flex !important;
+}
+
