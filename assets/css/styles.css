@@ -658,3 +658,38 @@ header .menu-icon {
 .logo-icon {
   display: flex !important;
 }
+
+
+/* navbar style for mobile device start  */
+.close-icon {
+  position: absolute;
+  right: 15px;
+  /* Adjust based on your layout */
+  top: 2%;
+  transform: translateY(-50%);
+  z-index: 1002;
+  /* Higher than menu */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-icon,
+.original-menu-icon,
+.close-icon {
+  cursor: pointer;
+}
+
+/* When menu is active, ensure close icon is visible */
+.menu-open .close-icon {
+  display: inline-block !important;
+  color: #000;
+  /* Adjust color as needed */
+}
+
+/* Hide the menu icons when menu is open */
+.menu-open .menu-icon,
+.menu-open .original-menu-icon {
+  display: none !important;
+}
+
+/* navbar style for mobile device end  */
